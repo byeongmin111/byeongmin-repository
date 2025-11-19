@@ -28,9 +28,9 @@ sky=Sky()
 
 block = Entity(
     model='cube',
-    scale=2.5,
+    scale=2,
     color=color.gold,
-    position=(0, 2, 20),
+    position=(0, 1, 20),
     collider='box'
 )
 
@@ -40,9 +40,9 @@ def block1():
     Z=random.randint(-20, 20)
     new_block = Entity(
         model='cube',
-        scale=2.5,
+        scale=2,
         color=color.gold,
-        position=(X, 2, Z),
+        position=(X, 1, Z),
         collider='box'
     )
     return new_block
