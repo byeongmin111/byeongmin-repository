@@ -11,7 +11,7 @@ player.y = 3
 
 
 score = 0
-score_text = Text(text=f'점수: {score}', position=(-0.85, 0.45), scale=2)
+score_text = Text(text=f'score: {score}', position=(-0.85, 0.45), scale=2)
 
 
 ground = Entity(
@@ -57,7 +57,7 @@ def input(key):
         if hit_info.hit and hit_info.entity == block:
             destroy(block)
             score += 1
-            score_text.text = f'점수: {score}'
+            score_text.text = f'score: {score}'
             block = block1()
 
             
